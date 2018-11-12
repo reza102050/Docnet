@@ -1,0 +1,1281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FE3980C-CA64-42C2-9A97-A36FA0D9F170}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DaroNet.My.MyApplication</StartupObject>
+    <RootNamespace>DaroNet</RootNamespace>
+    <AssemblyName>DocNet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Head-physician-32.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DocNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DocNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DocNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>DocNet.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\AxInterop.ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Zip.2">
+      <HintPath>..\DllforMyProgramm\C1.C1Zip.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948" />
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.0.20162.166, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DllforMyProgramm\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Design\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET.10, Version=10.0.0.14, Culture=neutral, PublicKeyToken=209474a1d4ddd90e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DllforMyProgramm\GdPicture.NET.10.dll</HintPath>
+    </Reference>
+    <Reference Include="GdPicture.NET.10.PDF, Version=3.0.0.10, Culture=neutral, PublicKeyToken=51c22536fc3bc6e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DllforMyProgramm\GdPicture.NET.10.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOX">
+      <HintPath>..\DllforMyProgramm\Interop.ADOX.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.MEShamsiDate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\Interop.MEShamsiDate.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>..\DllforMyProgramm\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="msdatasrc, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Persia, Version=3.0.4052.38236, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\Persia.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ADODB" />
+    <Import Include="CRAXDRT" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="Microsoft.VisualBasic.Compatibility.VB6" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="waccount" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrMosalah.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrMosalah.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrMosalahList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrMosalahList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DaroModule.vb" />
+    <Compile Include="de1.vb" />
+    <Compile Include="de1_dsr_1.vb" />
+    <Compile Include="de1_dsr_3.vb" />
+    <Compile Include="De4.vb" />
+    <Compile Include="FactorDaroBig.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FactorDaroBig.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FactorFish.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FactorFish.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="factorJanbaz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>factorJanbaz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FactorKamel.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FactorKamel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="fishcath.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fishcath.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmCreateDbfromTemplate.designer.vb">
+      <DependentUpon>frmCreateDbfromTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateDbfromTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocNobat.Designer.vb">
+      <DependentUpon>frmDocNobat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocNobat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocPanel.Designer.vb">
+      <DependentUpon>frmDocPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNetWorkSet.Designer.vb">
+      <DependentUpon>FrmNetWorkSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNetWorkSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaint.Designer.vb">
+      <DependentUpon>FrmPaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPenTab.Designer.vb">
+      <DependentUpon>frmPenTab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPenTab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttach.Designer.vb">
+      <DependentUpon>FrmAttach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAttach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackup.Designer.vb">
+      <DependentUpon>frmBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBimar.Designer.vb">
+      <DependentUpon>FrmBimar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBimar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateTimePicker.Designer.vb">
+      <DependentUpon>frmDateTimePicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateTimePicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEndyear.Designer.vb">
+      <DependentUpon>frmEndyear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndyear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoneyBarcode.Designer.vb">
+      <DependentUpon>frmMoneyBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoneyBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmphaprn.designer.vb">
+      <DependentUpon>frmphaprn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmphaprn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemainSet.Designer.vb">
+      <DependentUpon>frmRemainSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemainSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowVirtual.Designer.vb">
+      <DependentUpon>frmShowVirtual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowVirtual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTamdidAlarm.Designer.vb">
+      <DependentUpon>frmTamdidAlarm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTamdidAlarm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmamar.designer.vb">
+      <DependentUpon>frmamar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmamar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbank.designer.vb">
+      <DependentUpon>frmbank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmbank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarcode.designer.vb">
+      <DependentUpon>frmBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcath.designer.vb">
+      <DependentUpon>frmcath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchkdel.designer.vb">
+      <DependentUpon>frmchkdel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmchkdel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcopydaro.designer.vb">
+      <DependentUpon>frmcopydaro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcopydaro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcopysar.designer.vb">
+      <DependentUpon>frmcopysar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcopysar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdcode.designer.vb">
+      <DependentUpon>frmdcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDnos.Designer.vb">
+      <DependentUpon>frmDnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoActive.designer.vb">
+      <DependentUpon>frmDoActive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoActive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdoc.designer.vb">
+      <DependentUpon>frmdoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmedit.designer.vb">
+      <DependentUpon>frmedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmedit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfani.designer.vb">
+      <DependentUpon>frmfani.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfani.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHazList.designer.vb">
+      <DependentUpon>frmHazList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHazList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminstall.designer.vb">
+      <DependentUpon>frminstall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminstall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmjoz.designer.vb">
+      <DependentUpon>frmjoz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmjoz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkala.designer.vb">
+      <DependentUpon>frmkala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmkala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKey.Designer.vb">
+      <DependentUpon>FrmKey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmklst.designer.vb">
+      <DependentUpon>frmklst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmklst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkol.designer.vb">
+      <DependentUpon>frmkol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmkol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlbimar.designer.vb">
+      <DependentUpon>frmlbimar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlbimar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlcath.designer.vb">
+      <DependentUpon>frmlcath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlcath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlog.designer.vb">
+      <DependentUpon>frmlog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogOut.designer.vb">
+      <DependentUpon>frmLogOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLtaKh.designer.vb">
+      <DependentUpon>frmLtaKh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLtaKh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmanager.designer.vb">
+      <DependentUpon>frmmanager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoney.designer.vb">
+      <DependentUpon>frmMoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoney.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmoneyClose.designer.vb">
+      <DependentUpon>frmmoneyClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmoneyClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoneyList.designer.vb">
+      <DependentUpon>frmMoneyList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoneyList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnosprw.designer.vb">
+      <DependentUpon>frmnosprw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnosprw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmorgan.designer.vb">
+      <DependentUpon>frmorgan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmorgan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmremkala.designer.vb">
+      <DependentUpon>frmremkala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmremkala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrepair.designer.vb">
+      <DependentUpon>frmrepair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmrepair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoutine.designer.vb">
+      <DependentUpon>frmRoutine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoutine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmroutinelist.Designer.vb">
+      <DependentUpon>frmroutinelist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmroutinelist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsanadsr.Designer.vb">
+      <DependentUpon>frmsanadsr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsanadsr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTakmilBimeh.designer.vb">
+      <DependentUpon>frmTakmilBimeh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTakmilBimeh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtanzim.designer.vb">
+      <DependentUpon>frmtanzim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtanzim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtanzimhesab.designer.vb">
+      <DependentUpon>frmtanzimhesab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtanzimhesab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTel.Designer.vb">
+      <DependentUpon>frmTel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTelEdit.Designer.vb">
+      <DependentUpon>frmTelEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTelEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestAns.Designer.vb">
+      <DependentUpon>FrmTestAns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTestAns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateApplication.designer.vb">
+      <DependentUpon>FrmUpdateApplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser.designer.vb">
+      <DependentUpon>frmuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmxlist.designer.vb">
+      <DependentUpon>frmxlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmxlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmxmEmdad.designer.vb">
+      <DependentUpon>frmxmEmdad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmxmEmdad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmxml.designer.vb">
+      <DependentUpon>frmxml.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmxml.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmzprt.designer.vb">
+      <DependentUpon>frmzprt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmzprt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ghasemiDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ghasemiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="havlist.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>havlist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="havlistdate.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>havlistdate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="haztaraz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haztaraz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="hesab.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hesab.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HesabDariModule.vb" />
+    <Compile Include="hesabhaz.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hesabhaz.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Khletter.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Khletter.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="listden.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listden.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="listkhed.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listkhed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="listkhednew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listkhednew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main.vb" />
+    <Compile Include="MainForm.designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="phamonth.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>phamonth.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RegisterKey.vb" />
+    <Compile Include="rptfish.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptfish.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tamletter.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tamletter.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tamlist.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tamlist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tamlistNew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tamlistNew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TamListrpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TamListrpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\DarmanWebService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrMosalah.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrMosalah.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrMosalahList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrMosalahList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactorDaroBig.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FactorDaroBig.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactorFish.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FactorFish.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factorJanbaz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>factorJanbaz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactorKamel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FactorKamel.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fishcath.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>fishcath.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocNobat.resx">
+      <DependentUpon>frmDocNobat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocPanel.resx">
+      <DependentUpon>frmDocPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaint.resx">
+      <DependentUpon>FrmPaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPenTab.resx">
+      <DependentUpon>frmPenTab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttach.resx">
+      <DependentUpon>FrmAttach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackup.resx">
+      <DependentUpon>frmBackup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBimar.resx">
+      <DependentUpon>FrmBimar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateTimePicker.resx">
+      <DependentUpon>frmDateTimePicker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndyear.resx">
+      <DependentUpon>frmEndyear.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkol.fa.resx">
+      <DependentUpon>frmkol.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoneyBarcode.resx">
+      <DependentUpon>frmMoneyBarcode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmphaprn.resx">
+      <DependentUpon>frmphaprn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemainSet.resx">
+      <DependentUpon>frmRemainSet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowVirtual.resx">
+      <DependentUpon>frmShowVirtual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTamdidAlarm.resx">
+      <DependentUpon>frmTamdidAlarm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resX">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmamar.resX">
+      <DependentUpon>frmamar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbank.resX">
+      <DependentUpon>frmbank.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarcode.resX">
+      <DependentUpon>frmBarcode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcath.resX">
+      <DependentUpon>frmcath.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchkdel.resX">
+      <DependentUpon>frmchkdel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcopydaro.resX">
+      <DependentUpon>frmcopydaro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcopysar.resX">
+      <DependentUpon>frmcopysar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdcode.resX">
+      <DependentUpon>frmdcode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDnos.resx">
+      <DependentUpon>frmDnos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoActive.resX">
+      <DependentUpon>frmDoActive.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdoc.resX">
+      <DependentUpon>frmdoc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmedit.resX">
+      <DependentUpon>frmedit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfani.resX">
+      <DependentUpon>frmfani.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHazList.resX">
+      <DependentUpon>frmHazList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminstall.resX">
+      <DependentUpon>frminstall.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmjoz.resx">
+      <DependentUpon>frmjoz.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkala.resX">
+      <DependentUpon>frmkala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKey.resx">
+      <DependentUpon>FrmKey.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmklst.resX">
+      <DependentUpon>frmklst.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkol.resX">
+      <DependentUpon>frmkol.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlbimar.resX">
+      <DependentUpon>frmlbimar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlcath.resX">
+      <DependentUpon>frmlcath.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlog.resX">
+      <DependentUpon>frmlog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogOut.resX">
+      <DependentUpon>frmLogOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLtaKh.resX">
+      <DependentUpon>frmLtaKh.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmanager.resX">
+      <DependentUpon>frmmanager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoney.resX">
+      <DependentUpon>frmMoney.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmoneyClose.resX">
+      <DependentUpon>frmmoneyClose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoneyList.resX">
+      <DependentUpon>frmMoneyList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnosprw.resX">
+      <DependentUpon>frmnosprw.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmorgan.resX">
+      <DependentUpon>frmorgan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmremkala.resX">
+      <DependentUpon>frmremkala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrepair.resX">
+      <DependentUpon>frmrepair.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoutine.resX">
+      <DependentUpon>frmRoutine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmroutinelist.resX">
+      <DependentUpon>frmroutinelist.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsanadsr.resX">
+      <DependentUpon>frmsanadsr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTakmilBimeh.resX">
+      <DependentUpon>frmTakmilBimeh.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtanzim.resX">
+      <DependentUpon>frmtanzim.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtanzimhesab.resx">
+      <DependentUpon>frmtanzimhesab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTel.resx">
+      <DependentUpon>frmTel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTelEdit.resx">
+      <DependentUpon>frmTelEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestAns.resx">
+      <DependentUpon>FrmTestAns.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateApplication.resx">
+      <DependentUpon>FrmUpdateApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser.resX">
+      <DependentUpon>frmuser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmxlist.resx">
+      <DependentUpon>frmxlist.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmxmEmdad.resX">
+      <DependentUpon>frmxmEmdad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmxml.resX">
+      <DependentUpon>frmxml.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmzprt.resX">
+      <DependentUpon>frmzprt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="havlist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>havlist.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="havlistdate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>havlistdate.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="haztaraz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>haztaraz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesab.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>hesab.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesabhaz.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>hesabhaz.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khletter.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Khletter.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listden.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listden.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listkhed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listkhed.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listkhednew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listkhednew.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phamonth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>phamonth.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptfish.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptfish.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tamletter.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tamletter.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tamlist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tamlist.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tamlistNew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tamlistNew.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TamListrpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TamListrpt.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Fakes Include="Fakes\CrystalDecisions.Windows.Forms.fakes" />
+    <None Include="ghasemiDataSet.xsc">
+      <DependentUpon>ghasemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ghasemiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ghasemiDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ghasemiDataSet.xss">
+      <DependentUpon>ghasemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\DarmanWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\DarmanWebService\ZnDarmanWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdoNetSample.txt" />
+    <Content Include="Drug-basket.ico" />
+    <Content Include="Head-physician-32.ico" />
+    <Content Include="heart-32x32.ico" />
+    <Content Include="Hospital-32.ico" />
+    <None Include="Web References\DarmanWebService\ZnDarmanWebService.disco" />
+    <None Include="Resources\backDoctors.jpg" />
+    <None Include="Resources\Check-64.PNG" />
+    <None Include="Resources\Check-321.PNG" />
+    <None Include="Resources\System.png" />
+    <None Include="Resources\barcode-32.png" />
+    <None Include="Resources\Product-321.png" />
+    <None Include="Resources\DaroBackGround.jpg" />
+    <None Include="Resources\Sort-Columns-32.png" />
+    <None Include="Resources\Copy-32.png" />
+    <None Include="Resources\money_32.png" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\Forward.png" />
+    <None Include="Resources\Preview-321.png" />
+    <None Include="Resources\inbox-321.png" />
+    <None Include="Resources\outbox-32.png" />
+    <None Include="Resources\Preview-32.png" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Edit1.png" />
+    <None Include="Resources\Register-322.png" />
+    <None Include="Resources\Gnome-Application-Exit-32.png" />
+    <None Include="Resources\inbox-32.png" />
+    <None Include="Resources\doctor_assistant-32.png" />
+    <None Include="Resources\Cash-reg-32.png" />
+    <None Include="Resources\Cash-register-32.png" />
+    <None Include="Resources\Register-321.png" />
+    <None Include="Resources\Gnome-Phone-32.png" />
+    <None Include="Resources\Apple-iPhone_32.png" />
+    <None Include="Resources\Apple-iPhone_48.png" />
+    <None Include="Resources\Apple-iPhone_64.png" />
+    <None Include="Resources\Apple-iPhone_128.png" />
+    <None Include="Resources\Register-32.png" />
+    <None Include="Resources\Registerletter-32.png" />
+    <None Include="Resources\Edit-male-user-32.png" />
+    <None Include="Resources\Product-32.png" />
+    <None Include="Resources\Calculator-32.png" />
+    <None Include="Resources\Check-32.png" />
+    <None Include="Resources\120.ico" />
+    <None Include="Resources\Calculator.ico" />
+    <None Include="Resources\Printer Information.bmp" />
+    <None Include="Resources\Printer 2.bmp" />
+    <None Include="Resources\shampo.jpg" />
+    <None Include="Resources\stor1.jpg" />
+    <None Include="Resources\cheque.jpg" />
+    <None Include="Resources\fact5.jpg" />
+    <None Include="Resources\Report Search.bmp" />
+    <None Include="Resources\medical_pot_pills-32.ico" />
+    <None Include="Resources\pills-3-32x32.ico" />
+    <None Include="Resources\Invoice-32.ico" />
+    <None Include="Resources\Save 2 Check1.bmp" />
+    <None Include="Resources\Save 2 Check.bmp" />
+    <None Include="Resources\Pictures Refresh.bmp" />
+    <None Include="Resources\Report New.bmp" />
+    <None Include="Resources\Tech Add.bmp" />
+    <None Include="Resources\Phone.bmp" />
+    <None Include="Resources\142.ico" />
+    <None Include="Resources\Cash-register-32.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\UserSetup.png" />
+    <None Include="Resources\Skalpell.png" />
+    <None Include="Resources\RerunCalibration.png" />
+    <None Include="Resources\RejectQualityControl.png" />
+    <None Include="Resources\RejectCalibration.png" />
+    <None Include="Resources\Radioactive.png" />
+    <None Include="Resources\Pills.png" />
+    <None Include="Resources\Prescription.png" />
+    <None Include="Resources\PatientMale.png" />
+    <None Include="Resources\PatientFile.png" />
+    <None Include="Resources\PatientData.png" />
+    <None Include="Resources\LastThreeMonths.png" />
+    <None Include="Resources\KidneyDish.png" />
+    <None Include="Resources\History.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\DutyRoster.png" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\BandAid.png" />
+    <None Include="Resources\AcceptCalibration.png" />
+    <None Include="Resources\AcceptQualityControl.png" />
+    <None Include="Resources\Hospital.png" />
+    <None Include="Resources\XRay.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Vial-O.png" />
+    <None Include="Resources\Archive.png" />
+    <None Include="Resources\DoctorMale.png" />
+    <None Include="Resources\DoctorFemale.png" />
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:25360/ZnDarmanWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DarmanWebService\</RelPath>
+      <UpdateFromURL>http://localhost:25360/ZnDarmanWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DocNet_DarmanWebService_ZnDarmanWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

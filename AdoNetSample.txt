@@ -1,0 +1,140 @@
+﻿CrystalDecisions.CrystalReports.Engine
+    CrystalDecisions.Shared
+    CrystalDecisions.Windows.Forms
+    CrystalDecisions.ReportSource
+Imports System.Data.OleDb
+
+    Dim strConnection As String = "..."
+    Dim Connection As New OleDbConnection(strConnection)
+    Dim strSQL As String = "Select * From Customers"
+    Dim DA As New OleDbDataAdapter(strSQL, Connection)
+    Dim DS As New DataSet
+    '
+    ' Create a datatable in your dataset. The datatable's name 
+    ' must match that in the schema file used by the report.
+    '
+    DA.Fill(DS, "Customers")
+Verify the path to the Crystal Report's .RPT file:
+
+    Dim strReportPath As String = Application.StartupPath & _
+           "\" & strReportName & ".rpt"
+    
+    If Not IO.File.Exists(strReportPath) Then
+        Throw (New Exception("Unable to locate report file:" & _
+          vbCrLf & strReportPath))
+    End If
+Load the Crystal report's .RPT file and pass in the DataTable:
+
+    Dim cr As New ReportDocument
+
+    cr.Load(strReportPath)
+    cr.SetDataSource(DS.Tables("Customers"))
+Set the CrystalReportViewer's appearance and set the ReportSource:
+
+    CrystalReportViewer.ShowRefreshButton = False
+    CrystalReportViewer.ShowCloseButton = False
+    CrystalReportViewer.ShowGroupTreeButton = False
+
+    CrystalReportViewer.ReportSource = cr
+Loading a report when the report's DataSource is a .NET DLL
+
+This VB.NET code assumes your report's DataSource is a .NET DLL which returns a DataTable. For details on using a DLL as the datasource click here.
+
+Verify the path to the Crystal Report's .RPT file:
+
+    Dim strReportPath As String = Application.StartupPath & "\" & _
+        strReportName & ".rpt"
+    
+    If Not IO.File.Exists(strReportPath) Then
+        Throw (New Exception("Unable to locate report file:" & _
+          vbCrLf & strReportPath))
+    End If
+Load the Crystal report's .RPT file:
+
+    Dim cr As New ReportDocument
+    cr.Load(strReportPath)
+Set the CrystalReportViewer's appearance and set the ReportSource:
+
+    CrystalReportViewer.ShowRefreshButton = False
+    CrystalReportViewer.ShowCloseButton = False
+    CrystalReportViewer.ShowGroupTreeButton = False
+
+    CrystalReportViewer.ReportSource = cr
+To learn how to pass paramete
+
+
+
+
+'Dim m_factor As ADODB.Command
+        Dim rsfactor As ADODB.Recordset
+        Dim con_main As New ADODB.Connection
+        con_main.ConnectionString = MainForm.txtconstring.Text
+
+        If con_main.State = ADODB.ObjectStateEnum.adStateClosed Then
+            con_main.Open()
+        End If
+        'm_factor = New ADODB.Command()
+        'Dim m_commands As ADODB.Command()
+        rsfactor = New ADODB.Recordset()
+        'm_factor.Name = "factor"
+        'm_factor.CommandText = "select * from factor"
+        'm_factor.CommandType = ADODB.CommandTypeEnum.adCmdText
+        rsfactor.LockType = ADODB.LockTypeEnum.adLockOptimistic
+        rsfactor.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+        rsfactor.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+
+        ' rsfactor.Source = m_factor
+        rsfactor.Source = "select * from factor"
+        rsfactor.Open(, con_main, CursorTypeEnum.adOpenStatic, LockTypeEnum.adLockOptimistic, -1)
+        rsfactor.Open()
+
+
+Dim strsql As String
+
+        Dim ds As New DataSet()
+        Dim objDs As DataSet
+        Dim ObjDa As OleDbDataAdapter
+        Dim objRow As DataRow
+        Dim objTable As DataTable
+        Dim objColumn As DataColumn
+
+        Dim sSQL As String
+        Dim sName As String
+        Dim sCustID As String
+        Dim sOrderID As String
+        Dim sOrderIDText As String
+
+        Dim sAddress As String
+        Dim sProduct As String
+        Dim sQuantity As String
+        Dim sTotal As String
+
+        'Dim conn As New Connection
+        objDs = New DataSet()
+        sSQL = "delete from factor"
+        'ObjDa = New OleDbDataAdapter(sSQL, "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Environment.CurrentDirectory & "\Sample.mdb")
+        ObjDa = New OleDbDataAdapter(sSQL, MainForm.txtconstring.Text.ToString)
+        'ObjDa.Fill(objDs, "Customers and Orders")
+        Dim connectionString As String = MainForm.txtconstring.Text
+        Dim queryString As String = "select  * from factor"
+        Using connection As New OleDbConnection(connectionString)
+            ' Dim command As New OleDbCommand(queryString, connection)
+            'connection.Open()
+            'Dim reader As OleDbDataReader = command.ExecuteReader()
+            'reader.Read()
+
+
+            ' ObjDa.DeleteCommand.ExecuteNonQuery()
+
+            Dim adapter As OleDbDataAdapter = New OleDbDataAdapter(queryString, connection)
+
+            Dim categories As DataTable = New DataTable
+            adapter.Fill(categories)
+            categories.NewRow()
+            Dim newRow As DataRow = categories.NewRow()
+            newRow("Code") = "123"
+            categories.Rows.Add(newRow)
+
+            newRow.AcceptChanges()
+        End Using
+        '-------------------------------------------
